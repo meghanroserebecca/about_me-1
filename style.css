@@ -1,0 +1,38 @@
+html {
+  background-color: #DCDCDC;
+}
+
+main {
+  border-color: #4169E1;
+}
+
+img {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-right: 150px;
+}
+
+h1 {
+  background-color: #778899;
+  text-align: center;
+  display: block;
+}
+
+h2 {
+  background-color: #C0C0C0;
+  width: 200px;
+  margin-left: 25px;
+}
+
+ol {
+  width: 600px;
+}
+
+p {
+  background-color: #4682B4;
+  font-family: "Impact", Charcoal, sans-serif;
+  font-size: large;
+  margin: 75px;
+  width: 400px;
+}
