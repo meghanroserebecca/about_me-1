@@ -6,7 +6,7 @@ var userName = prompt('Welcome to the guessing game. To start off with, what is 
 
 function firstQuestionFunction() {
   var firstQuestion = prompt('Did you know that I grew up in Texas?');
-  console.log('User responded to the first question with ' + firstQuestion)
+  console.log('User responded to the first question with ' + firstQuestion);
   if(firstQuestion.toLowerCase() === 'yes' || firstQuestion.toLowerCase() === 'y') {
     alert('How did you know that?');
     score++;
