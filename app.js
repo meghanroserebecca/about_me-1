@@ -18,17 +18,22 @@ function firstQuestionFunction() {
 }
 
 firstQuestionFunction();
-/*var secondQuestion = prompt('Did you know I spent my teen years in Colorado?');
-console.log('User responded to the second question with: ' + secondQuestion);
 
-if(secondQuestion.toLowerCase() === 'yes' || secondQuestion.toLowerCase() === 'y') {
-  alert('Why do you know so much about me...?');
-  score++;
-} else if (secondQuestion.toLowerCase() === 'no' || secondQuestion.toLowerCase() === 'n') {
-  alert('Good. I\'d be worried if you did!');
-} else {
-  alert('Don\'t speak nonsense.');
+function secondQuestionFunction() {
+  var secondQuestion = prompt('Did you know I spent my teen years in Colorado?');
+  console.log('User responded to the second question with: ' + secondQuestion);
+
+  if(secondQuestion.toLowerCase() === 'yes' || secondQuestion.toLowerCase() === 'y') {
+    alert('Why do you know so much about me...?');
+    score++;
+  } else if (secondQuestion.toLowerCase() === 'no' || secondQuestion.toLowerCase() === 'n') {
+    alert('Good. I\'d be worried if you did!');
+  } else {
+    alert('Don\'t speak nonsense.');
+  }
 }
+
+secondQuestionFunction();
 
 var thirdQuestion = prompt('I spent a year teaching English abroad. What country do you think it was in: Thailand, Brazil or China?');
 console.log('User responded to the third question with: ' + thirdQuestion);
