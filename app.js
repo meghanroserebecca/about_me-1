@@ -70,69 +70,82 @@ function fourthQuestionFunction() {
 
 fourthQuestionFunction();
 
-/*var fifthQuestion = prompt('Do you think I\'ve got some amazing JavaScript skills???');
-console.log('User responded to the fifth question with: ' + fifthQuestion);
+function fifthQuestionFunction() {
+  var fifthQuestion = prompt('Do you think I\'ve got some amazing JavaScript skills???');
+  console.log('User responded to the fifth question with: ' + fifthQuestion);
 
-if(fifthQuestion.toLowerCase() === 'yes' || fifthQuestion.toLowerCase() === 'y') {
-  alert('Thanks. Unfortunately, you are wrong. If my skills were amazing, I wouldn\'t be here!');
-} else if (fifthQuestion.toLowerCase() === 'no' || fifthQuestion.toLowerCase === 'n') {
-  alert('I appreciate your honesty. Come back in four weeks.');
-  score++;
-} else {
-  alert('This is a yes or no question. Sheesh!');
+  if(fifthQuestion.toLowerCase() === 'yes' || fifthQuestion.toLowerCase() === 'y') {
+    alert('Thanks. Unfortunately, you are wrong. If my skills were amazing, I wouldn\'t be here!');
+  } else if (fifthQuestion.toLowerCase() === 'no' || fifthQuestion.toLowerCase === 'n') {
+    alert('I appreciate your honesty. Come back in four weeks.');
+    score++;
+  } else {
+    alert('This is a yes or no question. Sheesh!');
+  }
 }
+
+fifthQuestionFunction();
 
 //*Wednesday lab work//
 //*Guess a number, indicate high or low, give four chances. //
-var numberGuess = parseInt(prompt('How many pieces of pizza can I eat in one sitting?'));
 
-for (var i = 0; i < 4; i++) {
-  console.log('Try again!');
+function sixthQuestionFunction() {
+  var numberGuess = parseInt(prompt('How many pieces of pizza can I eat in one sitting?'));
+  for (var i = 0; i < 4; i++) {
+    console.log('Try again!');
 
-  var secretNumber = 10;
-  console.log('The guess is: ', numberGuess, 'and the secret is:', secretNumber);
-  console.log('numberGuess has a type', typeof numberGuess, 'secretNumber has type', typeof secretNumber);
-  if (numberGuess < secretNumber) {
-    alert('Nah, that\'s not it. Aim a little higher');
-    numberGuess = parseInt(prompt('Try again. How many pieces of pizza can I eat in one sitting?'));
-  } else if (numberGuess > secretNumber) {
-    alert('Too high. Chill and aim lower.');
-    numberGuess = parseInt(prompt('Try again. How many pieces of pizza can I eat in one sitting?'));
-  } else if (numberGuess === secretNumber){
-    alert('Right! I love pizza. What can I say?');
-    score++;
-    break;
-  } else {
-    alert('Answer with a number, please.');
-  }
-}
-
-//*Guess my favorite hobbies from an array. Six tries, display all correct answers at the end.//
-var hobbyGuess = prompt('Do I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza? You get six tries.');
-var hobbies = ['lawn care', 'eating hot pot', 'eating tofu', 'hiking', 'playing with my dog', 'eating pizza'];
-var correctAnswer = 'Correct. In fact, I like all of these things!!';
-var count = 0;
-var answerIsFound = false;
-
-while (count < 6) {
-  if (answerIsFound === true) {
-    alert(correctAnswer);
-    score++;
-    break;
-  } else {
-    alert('Sorry, wrong.');
-    hobbyGuess = prompt('Try again. Do I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza?');
-    count++;
-  }
-  for (var index = 0; index < hobbies.length; index++) {
-    if (hobbyGuess === hobbies[index]) {
-      answerIsFound = true;
-      count++;
+    var secretNumber = 10;
+    console.log('The guess is: ', numberGuess, 'and the secret is:', secretNumber);
+    console.log('numberGuess has a type', typeof numberGuess, 'secretNumber has type', typeof secretNumber);
+    if (numberGuess < secretNumber) {
+      alert('Nah, that\'s not it. Aim a little higher');
+      numberGuess = parseInt(prompt('Try again. How many pieces of pizza can I eat in one sitting?'));
+    } else if (numberGuess > secretNumber) {
+      alert('Too high. Chill and aim lower.');
+      numberGuess = parseInt(prompt('Try again. How many pieces of pizza can I eat in one sitting?'));
+    } else if (numberGuess === secretNumber){
+      alert('Right! I love pizza. What can I say?');
+      score++;
       break;
+    } else {
+      alert('Answer with a number, please.');
     }
   }
-  if (count > 5) {
-    alert('Six fails... Well, I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza. So yeah, I like all of them!');
+}
+
+sixthQuestionFunction();
+
+//*Guess my favorite hobbies from an array. Six tries, display all correct answers at the end.//
+
+function seventhQuestionFunction() {
+  var hobbyGuess = prompt('Do I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza? You get six tries.');
+  var hobbies = ['lawn care', 'eating hot pot', 'eating tofu', 'hiking', 'playing with my dog', 'eating pizza'];
+  var correctAnswer = 'Correct. In fact, I like all of these things!!';
+  var count = 0;
+  var answerIsFound = false;
+
+  while (count < 6) {
+    if (answerIsFound === true) {
+      alert(correctAnswer);
+      score++;
+      break;
+    } else {
+      alert('Sorry, wrong.');
+      hobbyGuess = prompt('Try again. Do I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza?');
+      count++;
+    }
+    for (var index = 0; index < hobbies.length; index++) {
+      if (hobbyGuess === hobbies[index]) {
+        answerIsFound = true;
+        count++;
+        break;
+      }
+    }
+    if (count > 5) {
+      alert('Six fails... Well, I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza. So yeah, I like all of them!');
+    }
   }
 }
-alert('Thanks for playing ' + userName + ', you got ' + score + ' right!');*/
+
+seventhQuestionFunction();
+alert('Thanks for playing ' + userName + ', you got ' + score + ' right!');
