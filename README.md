@@ -1,3 +1,5 @@
 # about_me
-put something here if you want, maybe url where it's hosted
-here is some text to save...
+Driver: Meghan
+Navigator: Mike
+
+We worked together on this project on 11/10/16. It was awesome! We got both of our projects working as well as completed the function assignment.
