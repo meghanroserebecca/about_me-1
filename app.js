@@ -2,19 +2,23 @@
 alert('You are going to learn about me, Mike D. Don\'t worry, I\'ll try to keep it interesting...');
 var score = 0;
 var userName = prompt('Welcome to the guessing game. To start off with, what is your name?');
-var firstQuestion = prompt('Did you know that I grew up in Texas?');
-console.log('User responded to the first question with: ' + firstQuestion);
+//*var firstQuestion = prompt('Did you know that I grew up in Texas?');
 
-if(firstQuestion.toLowerCase() === 'yes' || firstQuestion.toLowerCase() === 'y') {
-  alert('How did you know that?');
-  score++;
-} else if (firstQuestion.toLowerCase() === 'no' || firstQuestion.toLowerCase() === 'n') {
-  alert('Why would you?');
-} else {
-  alert('Whaaaa?');
+function firstQuestionFunction() {
+  var firstQuestion = prompt('Did you know that I grew up in Texas?');
+  console.log('User responded to the first question with ' + firstQuestion)
+  if(firstQuestion.toLowerCase() === 'yes' || firstQuestion.toLowerCase() === 'y') {
+    alert('How did you know that?');
+    score++;
+  } else if (firstQuestion.toLowerCase() === 'no' || firstQuestion.toLowerCase() === 'n') {
+    alert('Why would you?');
+  } else {
+    alert('Whaaaa?');
+  }
 }
 
-var secondQuestion = prompt('Did you know I spent my teen years in Colorado?');
+firstQuestionFunction();
+/*var secondQuestion = prompt('Did you know I spent my teen years in Colorado?');
 console.log('User responded to the second question with: ' + secondQuestion);
 
 if(secondQuestion.toLowerCase() === 'yes' || secondQuestion.toLowerCase() === 'y') {
@@ -119,4 +123,4 @@ while (count < 6) {
     alert('Six fails... Well, I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza. So yeah, I like all of them!');
   }
 }
-alert('Thanks for playing ' + userName + ', you got ' + score + ' right!');
+alert('Thanks for playing ' + userName + ', you got ' + score + ' right!');*/
