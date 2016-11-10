@@ -35,35 +35,42 @@ function secondQuestionFunction() {
 
 secondQuestionFunction();
 
-var thirdQuestion = prompt('I spent a year teaching English abroad. What country do you think it was in: Thailand, Brazil or China?');
-console.log('User responded to the third question with: ' + thirdQuestion);
-
-if(thirdQuestion.toLowerCase() === 'thailand' || thirdQuestion.toLowerCase() === 't') {
-  alert('Nope!');
-} else if (thirdQuestion.toLowerCase() === 'brazil' || thirdQuestion.toLowerCase() === 'b') {
-  alert('Wrong!');
-} else if (thirdQuestion.toLowerCase() === 'china' || thirdQuestion.toLowerCase() === 'c') {
-  alert('You got it!');
-  score++;
-} else {
-  alert('Reply with Thailand, Brazil or China!');
+function thirdQuestionFunction() {
+  var thirdQuestion = prompt('I spent a year teaching English abroad. What country do you think it was in: Thailand, Brazil or China?');
+  console.log('User responded to the third question with: ' + thirdQuestion);
+  if(thirdQuestion.toLowerCase() === 'thailand' || thirdQuestion.toLowerCase() === 't') {
+    alert('Nope!');
+  } else if (thirdQuestion.toLowerCase() === 'brazil' || thirdQuestion.toLowerCase() === 'b') {
+    alert('Wrong!');
+  } else if (thirdQuestion.toLowerCase() === 'china' || thirdQuestion.toLowerCase() === 'c') {
+    alert('You got it!');
+    score++;
+  } else {
+    alert('Reply with Thailand, Brazil or China!');
+  }
 }
 
-var fourthQuestion = prompt('I\'ve worked a variety of jobs, including landscaper, courier driver and web content writer. Which job do you think Code201 is going to be most compatible with?');
-console.log('User responded to the fourth question with: ' + fourthQuestion);
+thirdQuestionFunction();
 
-if(fourthQuestion.toLowerCase() === 'landscaper' || fourthQuestion.toLowerCase() === 'l') {
-  alert('Maybe, but not in my case.');
-} else if (fourthQuestion.toLowerCase() === 'courier driver' || fourthQuestion.toLowerCase() === 'c') {
-  alert('Possibly, but not for me.');
-} else if (fourthQuestion.toLowerCase() === 'web content writer' || fourthQuestion.toLowerCase() === 'w') {
-  alert('Yep. Makes sense, doesn\'t it?');
-  score++;
-} else {
-  alert('You gotta give one of the answers I asked for!');
+function fourthQuestionFunction() {
+  var fourthQuestion = prompt('I\'ve worked a variety of jobs, including landscaper, courier driver and web content writer. Which job do you think Code201 is going to be most compatible with?');
+  console.log('User responded to the fourth question with: ' + fourthQuestion);
+
+  if(fourthQuestion.toLowerCase() === 'landscaper' || fourthQuestion.toLowerCase() === 'l') {
+    alert('Maybe, but not in my case.');
+  } else if (fourthQuestion.toLowerCase() === 'courier driver' || fourthQuestion.toLowerCase() === 'c') {
+    alert('Possibly, but not for me.');
+  } else if (fourthQuestion.toLowerCase() === 'web content writer' || fourthQuestion.toLowerCase() === 'w') {
+    alert('Yep. Makes sense, doesn\'t it?');
+    score++;
+  } else {
+    alert('You gotta give one of the answers I asked for!');
+  }
 }
 
-var fifthQuestion = prompt('Do you think I\'ve got some amazing JavaScript skills???');
+fourthQuestionFunction();
+
+/*var fifthQuestion = prompt('Do you think I\'ve got some amazing JavaScript skills???');
 console.log('User responded to the fifth question with: ' + fifthQuestion);
 
 if(fifthQuestion.toLowerCase() === 'yes' || fifthQuestion.toLowerCase() === 'y') {
