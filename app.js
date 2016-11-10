@@ -125,27 +125,27 @@ function seventhQuestionFunction() {
   var answerIsFound = false;
 
   while (count < 6) {
-    if (answerIsFound === true) {
+    for (var index = 0; index < hobbies.length; index++) {
+      if (hobbyGuess === hobbies[index]) {
+        answerIsFound = true;
+        count++;
+        score++;
+        break;
+      }
+    }
+    if (answerIsFound) {
       alert(correctAnswer);
-      score++;
       break;
     } else {
       alert('Sorry, wrong.');
       hobbyGuess = prompt('Try again. Do I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza?');
       count++;
     }
-    for (var index = 0; index < hobbies.length; index++) {
-      if (hobbyGuess === hobbies[index]) {
-        answerIsFound = true;
-        count++;
-        break;
-      }
-    }
-    if (count > 5) {
-      alert('Six fails... Well, I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza. So yeah, I like all of them!');
-    }
+
+  }
+  if (count > 5) {
+    alert('Six fails... Well, I like lawn care, eating hot pot, eating tofu, hiking, playing with my dog or eating pizza. So yeah, I like all of them!');
   }
 }
-
 seventhQuestionFunction();
 alert('Thanks for playing ' + userName + ', you got ' + score + ' right!');
